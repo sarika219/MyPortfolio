@@ -1,0 +1,280 @@
+<!DOCTYPE html> 
+<html lang ="en"> 
+<head> 
+	<meta charset = "UTF-8">
+	<meta name ="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<title> 
+		MY PORTFOLIO WEBSITE
+	</title> 
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"> 
+	<style>
+		@import 'utilities.css';
+
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+}
+body{
+    font-family:'Poppins', sans-serif;
+}
+html{
+    scroll-behavior:smooth;
+}
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    -webkit-font-smothing:antialiased;
+}
+section.intro{
+    background: var(--ternary);
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 75% 87%, 0 100%);
+}
+section.intro h6{
+    font-size:1.6rem;
+    margin-bottom:0.5rem;
+}
+section.intro h1{
+    font-size:3.5rem;
+    font-weight:100;
+    line-height:1.2;
+    margin-bottom:2rem;
+}
+section.intro h1 span{
+    color:var(--primary);
+}
+section.intro p{
+    line-height:1.9;
+    margin-bottom:2rem;
+}
+section.intro .btn{
+    background:var(--primary);
+}
+section.intro .btn a{
+    color:var(--pure);
+    text-decoration:none;
+}
+section.intro .btn a:hover{
+    color:var(--dark);
+}
+ .container{ 
+    max-width: 1152px;
+    padding:0 15px;
+    margin:0 auto;
+}
+
+header navbar navbar-expand-lg navbar-light bg-light a{
+    color:var(--pure);
+    text-decoration: none;
+    margin-right:2rem;
+    transition:all .3s ease;
+}
+header nav a:hover{
+    color:var(--primary);
+}
+header nav .right a{
+    text-decoration:none;
+}
+header nav{
+    padding:2rem 0;
+}
+section{
+    padding:6rem 0;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size:1.6rem;
+    font-weight:400;
+}
+section.about h1 span{
+    color:var(--primary);
+}
+section.about h3{
+    font-size: 1rem;
+    margin-bottom:1rem;
+    font-weight:400;
+}
+section.about p{
+    color:var(--ternary);
+    line-height:1.9;
+    margin-bottom:2rem;
+}
+section.about .social{
+    line-height:1.8;
+    color:var(--dark);
+}
+section.about .social a{
+    color:var(--primary);
+    text-decoration:none;
+}
+section.about .social a:hover{
+    color:var(--dark);
+}
+section.projects{
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/camera.png);
+    color:var(--pure);
+    clip-path:polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+    padding-bottom:10rem;
+}
+section.projects h1{
+    color:var(--primary);
+    font-size:2rem;
+    margin-bottom:0.5rem;
+}
+section.projects p{
+    margin-bottom: 2rem;
+}
+section.contact{
+    text-align:center;
+    padding-bottom:10rem;
+    line-height:2;
+}
+section.contact h4{
+    color:var(--ternary);
+}
+footer{
+    text-align:center;
+    padding:3rem 0;
+    line-height:3;
+}
+
+.site-main-wrapper{
+    position:relative;
+}
+
+
+
+
+	</style>
+	<style>
+		.flex{
+    display:flex;
+}
+
+.items-center{
+    align-items:center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.btn{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight:600;
+    border:2px solid transparent;
+    outline:none;
+    cursor:pointer;
+    transition: all .3s ease;
+}
+.btn-primary{
+    background:var(--primary);
+    color:var(--secondary);
+}
+.btn-primary:hover{
+    background:transparent;
+    border-color:var(--primary);
+    color:var(--primary);
+}
+.btn-secondary{
+    background:transparent;
+    color:var(--primary);
+    border-color:var(--primary);
+}
+.btn-secondary:hover{
+    background:var(--primary);
+    color:var(--secondary);
+}
+
+	</style>
+</head> 
+<body> 
+	<div class="site-main-wrapper">
+        <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+        <div class = "left flex items-center">    
+        <a class="navbar-brand" href="#"><b>HOME</b></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#about"><b>ABOUT ME</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects"><b>MY PROJECTS</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact"><b>CONTACT ME</b></a>
+      </li>
+      </ul>
+      </div>
+    </form>
+  </div>
+        </div>
+        </nav>
+        </div>
+    </div>
+</header>  
+<section id="intro" class = "intro">
+    <center><div class = "right">
+        <h6><b>Abhisarika Tidke</b></h6>
+        <p>This is my Portfolio Website.</p>
+        <div><button class = "btn btn-secondary"><a href="MyResume.docx">MY RESUME</a></button></div>
+    </div></center>  
+</section>
+		
+		<section id="about" class="about">
+			<div class="container">
+				<h1><b>About <span>Me</span></b></h1>
+				<h3><b>Hello! I'm Abhisarika Tidke.</b></h3>
+				<p>I am pursuing a BTech degree in Computer Science & Engineering from Indian Institute of Information Technology, Bhopal.
+					Currently I'm in third year. I am keen on learning Machine Learning and Artificial Intelligence. I would like to pursue a job in this field in the future.
+					My skills include C, C++14, Python 3.8, HTML5, CSS, Bootstrap4, etc. 
+				</p>
+				<div class="social">
+					<ul>
+						<!-- <li><a href="#">My LinkedIn Profile</a></li> -->
+						<li><a href="https://github.com/sarika219">My Git hub Profile</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<section id="projects" class="projects">
+			<h1><b>My Projects</b></h1>
+			<p>I am currently working on many projects based on Machine Learning, etc. These are few of my Project Links. 
+			<ul>
+				<li><a href="https://github.com/sarika219/Breast_Cancer_DatasetAnalysis-using-Logistic-Regression-"></a></li>
+				<li><a href="https://sarika219.github.io/MyPortfolio/"></a></li>
+                <li><a href="https://github.com/sarika219/covid-tracker-app"></a></li>
+                
+			</ul> 
+			</p>
+		</section>
+		<section id = "contact" class = "contact">
+			<h1><b>Contact Me</b></h1>
+			<h4>Email ID : sarikat999@gmail.com</h4>
+		</section>
+		<footer>
+			<hr> 
+			<center><div><b>Copyright (c) 2020 Abhisarika Tidke</b></div></center>
+		</footer>
+	</div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body> 
+
+</html> 
